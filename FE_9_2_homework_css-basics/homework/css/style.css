@@ -1,0 +1,142 @@
+@media print {
+    .tm-sidebar {
+        display: none;
+    }
+
+    .tm-main-content {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .tm-banner {
+        height: 230px;
+    }
+
+    section:nth-child(n+3), #about {
+        display: none;
+    }
+
+    .flex-item img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .flex-2-col{
+        display: block;
+    }
+
+    .tm-team-description-container {
+        padding-top: 0;
+        padding-bottom: 0;
+        max-width: 100%;
+    }
+
+    h2.tm-section-title {
+        color: blue;
+    }
+}
+
+@media screen {
+    p::first-letter {
+        color: #76cdd7;
+        font-size: 30px;
+    }
+
+    .tm-content-box, .tm-sidebar {
+        box-shadow: 0 0 15px #bbb;
+    }
+
+    #about img {
+        border-radius: 50%;
+    }
+
+    .box-bg:hover {
+        background-color: #31b0d5;
+    }
+
+    .box-bg h2:hover {
+        color: #fff;
+        font-weight: bold;
+    }
+
+    h2 + p {
+        font-style: italic;
+    }
+
+    nav li {
+        border-bottom: 2px dotted silver;
+    }
+
+    nav li:last-child {
+        border-bottom: none;
+    }
+
+    input[type="text"], button[type="submit"] {
+        color: red;
+    }
+
+    button[type="submit"]:hover {
+        color: white;
+        background-color: #31b0d5;
+    }
+
+    .contact-form div:nth-child(2)::after {
+        content: '*';
+        color: red;
+        float:right;
+    }
+
+    #home, .flex-2-col, .heading, .blocks, #ideas, #ideas+.tm-content-box {
+        position: relative;
+    }
+
+    #home:after, .flex-2-col:after, .heading:after, .blocks:after, #ideas:after, #ideas+.tm-content-box:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 25px 100px 0 0;
+        border-color: #31b0d5 transparent transparent transparent;
+        position: absolute;    
+        top: 0;
+        left: 0;
+    }
+        
+    .blocks .flex-2-col:after {
+        content: none;
+    }
+
+    .pad p {
+        text-indent: 25px;
+    }
+
+    .carousel-content:first-child h2 {
+        color: gainsboro;
+        letter-spacing: 5px;
+    }
+
+    .text::after {
+        font-size: 12px;
+        content: "New";
+        color: red;
+        vertical-align: super;
+    }
+
+    .heading a:visited {
+        color: silver;
+    }
+
+    .heading a:hover { 
+        color: #76cdd7;
+        text-decoration: underline;
+    }
+
+    .blocks .gallery-container .box:nth-child(odd){
+        background-color: #eaecef;
+    }
+
+    .blocks .gallery-container .box p::first-letter{
+        color: #000;
+        }
+}
