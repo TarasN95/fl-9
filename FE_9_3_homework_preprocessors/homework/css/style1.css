@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: white;
+  font-family: sans-serif; }
+  body .main-wrapper {
+    width: 960px;
+    margin: 0 auto; }
+    body .main-wrapper header {
+      height: 300px;
+      display: flex; }
+      body .main-wrapper header .logo {
+        width: 40%; }
+        body .main-wrapper header .logo img {
+          width: 100%; }
+      body .main-wrapper header nav {
+        display: flex;
+        width: 60%;
+        height: 65px;
+        border-top: 2px solid #909090;
+        border-bottom: 2px solid #909090;
+        margin-top: 185px;
+        margin-right: 20px; }
+        body .main-wrapper header nav a {
+          color: #60c2c5;
+          width: 33%;
+          font-size: 20px;
+          text-align: center;
+          text-decoration: none;
+          text-transform: uppercase;
+          margin: auto; }
+    body .main-wrapper .toolbar {
+      height: 50px;
+      margin-right: 20px; }
+      body .main-wrapper .toolbar input {
+        border: 2px solid #60c2c5;
+        background-color: white;
+        width: 200px;
+        height: 40px;
+        float: right;
+        padding-left: 20px; }
+      body .main-wrapper .toolbar ::placeholder {
+        color: #60c2c5; }
+    body .main-wrapper .post-list article {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: 417px;
+      margin: 20px;
+      padding: 10px;
+      background-color: #f8f8f8; }
+      body .main-wrapper .post-list article img {
+        width: 100%; }
+      body .main-wrapper .post-list article div {
+        padding: 10px; }
+        body .main-wrapper .post-list article div .post-description {
+          font-size: 15px;
+          color: #359797;
+          border-bottom: 1px solid #909090;
+          padding: 10px 0; }
+        body .main-wrapper .post-list article div h3 {
+          font-size: 1.2em;
+          color: #359797;
+          font-weight: bold;
+          margin-top: 15px;
+          text-transform: uppercase; }
+        body .main-wrapper .post-list article div p {
+          font-size: 15px;
+          color: #949595;
+          line-height: 23px;
+          margin-bottom: 10px; }
+    body .main-wrapper .about {
+      margin: 0 20px; }
+      body .main-wrapper .about h1 {
+        color: #60c2c5;
+        text-transform: uppercase;
+        text-align: right;
+        margin-top: 25px; }
+      body .main-wrapper .about p {
+        margin: 5px 0 15px 0;
+        color: #949595; }
+      body .main-wrapper .about img {
+        width: 100%; }
+    body .main-wrapper .contact-form {
+      padding: 15px 10px 0 10px; }
+      body .main-wrapper .contact-form h1 {
+        color: #60c2c5;
+        text-align: right;
+        margin: 30px 10px 0 10px; }
+      body .main-wrapper .contact-form h4 {
+        color: #60c2c5;
+        text-align: right;
+        text-transform: uppercase;
+        margin: 0 10px; }
+      body .main-wrapper .contact-form input {
+        width: 100%;
+        border: 1px solid #909090;
+        background-color: white;
+        box-sizing: border-box;
+        margin-top: 10px;
+        height: 30px;
+        padding-left: 10px; }
+      body .main-wrapper .contact-form textarea {
+        width: 100%;
+        margin-top: 10px;
+        border: 1px solid #909090;
+        background-color: white;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        height: 90px; }
+      body .main-wrapper .contact-form div {
+        text-align: right;
+        margin-top: 15px; }
+        body .main-wrapper .contact-form div .btn {
+          width: 150px;
+          height: 30px;
+          text-align: center;
+          text-transform: uppercase;
+          color: white;
+          background-color: #60c2c5;
+          border: 1px solid transparent; }
+    body .main-wrapper footer span {
+      color: #909090;
+      font-size: 0.8em;
+      margin: 0 20px; }

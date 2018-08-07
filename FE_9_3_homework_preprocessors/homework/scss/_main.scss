@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: $bodyBg;
+  font-family: $fontFam;
+  .main-wrapper {
+    width: 960px;
+    margin: 0 auto;
+    header {
+      height: 300px;
+      display: flex;
+      .logo {
+        width: 40%;
+        img {
+          width: 100%;
+        }
+      }
+      nav {
+        display: flex;
+        width: 60%;
+        height: 65px;
+        border-top: 2px solid $borderColor;
+        border-bottom: 2px solid $borderColor;
+        margin-top: 185px;
+        margin-right: 20px;
+        a {
+          color: $textColor;
+          width: 33%;
+          font-size: 20px;
+          text-align: center;
+          text-decoration: none;
+          text-transform: uppercase;
+          margin: auto;
+        }
+      }
+    }
+
+    .toolbar {
+      height: 50px;
+      margin-right: 20px;
+
+      input {
+        border: 2px solid $textColor;
+        background-color: $bodyBg;
+        width: 200px;
+        height: 40px;
+        float: right;
+        padding-left: 20px;
+      }
+      ::placeholder {
+        color: $textColor;
+      }
+    }
+
+    .post-list {
+      article {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: 417px;
+        margin: 20px;
+        padding: 10px;
+        background-color: $articleBg;
+        img {
+          width: 100%;
+        }
+        div {
+          padding: 10px;
+          .post-description {
+            font-size: 15px;
+            color: $articleHeaderColor;
+            border-bottom: 1px solid $borderColor;
+            padding: 10px 0;
+          }
+          h3 {
+            font-size: 1.2em;
+            color: $articleHeaderColor;
+            font-weight: bold;
+            margin-top: 15px;
+            text-transform: uppercase;
+          }
+          p {
+            font-size: 15px;
+            color: $paragrafColor;
+            line-height: 23px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+
+    .about {
+      margin: 0 20px;
+      h1 {
+        color: $textColor;
+        text-transform: uppercase;
+        text-align: right;
+        margin-top: 25px;
+      }
+      p {
+        margin: 5px 0 15px 0;
+        color: $paragrafColor;
+      }
+      img {
+        width: 100%;
+      }
+    }
+
+    .contact-form {
+      padding: 15px 10px 0 10px;
+      h1 {
+        color: $textColor;
+        text-align: right;
+        margin: 30px 10px 0 10px;
+      }
+      h4 {
+        color: $textColor;
+        text-align: right;
+        text-transform: uppercase;
+        margin: 0 10px;
+      }
+      input {
+        width: 100%;
+        border: 1px solid $borderColor;
+        background-color: $bodyBg;
+        box-sizing: border-box;
+        margin-top: 10px;
+        height: 30px;
+        padding-left: 10px;
+      }
+      textarea {
+        width: 100%;
+        margin-top: 10px;
+        border: 1px solid $borderColor;
+        background-color: $bodyBg;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        height: 90px;
+      }
+      div {
+        text-align: right;
+        margin-top: 15px;
+        .btn {
+          width: 150px;
+          height: 30px;
+          text-align: center;
+          text-transform: uppercase;
+          color: white;
+          background-color: $textColor;
+          border: 1px solid transparent;
+        }
+      }
+    }
+
+    footer {
+      span {
+        color: $borderColor;
+        font-size: 0.8em;
+        margin: 0 20px;
+      }
+    }
+  }
+}
