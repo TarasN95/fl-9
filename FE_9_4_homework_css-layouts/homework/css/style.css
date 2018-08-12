@@ -1,0 +1,224 @@
+* {
+    font-family: 'Open Sans';
+}
+body {
+    max-width: 1700px;
+    min-width: 900px;
+    margin: 0px auto;
+}
+#wrapper{
+    margin: 0px auto;
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 600px;
+    background-image:  url("../img/apples.jpg");
+    background-size: cover;
+    background-position: center;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 40px 0 40px;
+}
+header .headerLinks a {
+    margin: 20px;
+}
+header nav a, header .logoButton {
+    color: #FFF;
+    text-decoration: none;
+}
+header .logo{
+    text-transform: uppercase;
+}
+.logoButton {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.bigA {
+    font-size: 55px;
+}
+.logoButton p:nth-child(1){
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 6px;
+}
+.logoButton p:nth-child(2){
+    font-size: 10px;
+}
+.h-button {
+  text-align: center;
+  height: 30%;
+}
+.h-button button {
+    border: 2px solid #FFF;
+    background: rgba(52, 54, 56, 0.6);
+    color: #FFF;
+    height: 40%;
+    width: 50%;
+}
+
+.description {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 0;
+}
+.description article {
+    margin-top: 70px;
+    margin-bottom: 70px ;
+}
+.description article:nth-child(1) {
+ width: 40%;
+ font-size: 30px;
+ margin-right: 70px;
+}
+.description article:nth-child(2) {
+  width: 40%;
+  margin-left: 25px;
+  height: 30px;
+}
+
+.titleSection,.parahStyle {
+    text-align: center;
+}
+.titleSection {
+    font-size: 20px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+ main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #E8E8E8;
+    box-sizing: border-box;
+    padding: 40px;
+} 
+.styleArticle{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+.imgStyle, .parahStyle {
+    flex-basis: 0;
+}
+.imgStyle {
+    flex-grow: 1.5; 
+}
+.imgStyle img {
+    width: 100%;
+}
+.parahStyle{
+  flex-grow: 1;
+  margin: 10px;
+}
+.formEmail {
+    background: #FFF;
+    display: flex;
+    justify-content: space-between; 
+    vertical-align: center;
+    align-items: center;
+    padding: 40px;
+}
+.formEmail p {
+    font-size: 20px;   
+    flex-grow: 0.5;
+    width: 30%;
+
+}
+.formEmail form {
+    flex-basis: 0; 
+    flex-grow: 1.5;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.formEmail form input[type="email"]  {
+    flex-basis: 0;
+    flex-grow: 3;
+}
+.formEmail form input[type="submit"]  {
+    flex-basis: 0;
+    flex-grow: 0.5;
+}
+footer {
+    display: flex;
+    padding:  40px;
+}
+.mainFooter article {
+    width: 25%;
+    margin: 10px;
+}
+.mainFooter article p {
+    color: #9E9E9E;
+}
+.mainFooter article h4 {
+    font-weight: 600;
+}
+.timeAgo {
+    color: #F3F3F3;
+}
+.mainFooter article:not(:last-child) {
+    margin-right: 50px;
+}
+.mainFooter article:last-child {
+    /* margin-right: 50px; */
+}
+.mainFooter article form {
+    display: flex;
+}
+.footerNavigation {
+    justify-content: space-between;
+    border-top: 2px solid #9E9E9E;
+    padding: 20px 50px;
+}
+.footerNavigation div a {
+    text-decoration: none;
+    color: #000;
+    margin: 10px;
+}
+.footerNavigation div p {
+    color: #A4A4A4;
+}
+
+form  input[type="email"], form  input[type="submit"]{
+    border: 1px solid #000;
+    font-size: 15px;
+    height: 45px;
+}
+form  input[type="submit"] {
+    background: #343638;
+    color: #F0F0F0;
+    margin-left: -5px;
+}
+form  input[type="email"] {
+    background: #E8E8E8;
+}
+input::placeholder{
+    color: #343638;
+    padding-left: 10px;
+}
+.imgStyle{
+    position: relative;
+}
+.imgStyle h6 {
+    z-index: 1;
+    position: absolute;
+    bottom: 7%;
+    left: 40px;
+    color: #FFF;
+}
+.imgStyle a {
+    z-index: 1;
+    position: absolute;
+    padding: 8px 10px;
+    top: 30px;
+    right: 5%;
+    color: #FFF;
+    cursor: pointer;
+    background: rgba(0,0,0,0.5); 
+}
